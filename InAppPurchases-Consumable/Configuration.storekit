@@ -1,0 +1,33 @@
+{
+  "identifier" : "1A6CBA8D",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "15.99",
+      "familyShareable" : false,
+      "internalID" : "E72857F4",
+      "localizations" : [
+        {
+          "description" : "DNA face macthing ",
+          "displayName" : "Value Package  ",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "cn_1599",
+      "referenceName" : "ValuePackage $15.99",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

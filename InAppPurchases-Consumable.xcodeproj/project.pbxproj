@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A35C6F52A409D0400C7073A /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 4A35C6F42A409D0400C7073A /* Configuration.storekit */; };
+		4A695C102A35997400B80BE4 /* ProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A695C0E2A35997400B80BE4 /* ProductTableCell.swift */; };
+		4A695C112A35997400B80BE4 /* ProductTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A695C0F2A35997400B80BE4 /* ProductTableCell.xib */; };
+		4A695C152A35F65B00B80BE4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A695C142A35F65B00B80BE4 /* StoreKit.framework */; };
 		4ACCB9AD2A2CF3B500F28B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCB9AC2A2CF3B500F28B56 /* AppDelegate.swift */; };
 		4ACCB9AF2A2CF3B500F28B56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCB9AE2A2CF3B500F28B56 /* SceneDelegate.swift */; };
-		4ACCB9B12A2CF3B500F28B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCB9B02A2CF3B500F28B56 /* ViewController.swift */; };
+		4ACCB9B12A2CF3B500F28B56 /* InAppPurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCB9B02A2CF3B500F28B56 /* InAppPurchaseController.swift */; };
 		4ACCB9B42A2CF3B500F28B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCB9B22A2CF3B500F28B56 /* Main.storyboard */; };
 		4ACCB9B62A2CF3B500F28B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCB9B52A2CF3B500F28B56 /* Assets.xcassets */; };
 		4ACCB9B92A2CF3B500F28B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCB9B72A2CF3B500F28B56 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A35C6F42A409D0400C7073A /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		4A695C0E2A35997400B80BE4 /* ProductTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableCell.swift; sourceTree = "<group>"; };
+		4A695C0F2A35997400B80BE4 /* ProductTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableCell.xib; sourceTree = "<group>"; };
+		4A695C142A35F65B00B80BE4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4ACCB9A92A2CF3B500F28B56 /* InAppPurchases-Consumable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InAppPurchases-Consumable.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACCB9AC2A2CF3B500F28B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ACCB9AE2A2CF3B500F28B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4ACCB9B02A2CF3B500F28B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4ACCB9B02A2CF3B500F28B56 /* InAppPurchaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseController.swift; sourceTree = "<group>"; };
 		4ACCB9B32A2CF3B500F28B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4ACCB9B52A2CF3B500F28B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ACCB9B82A2CF3B500F28B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +39,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A695C152A35F65B00B80BE4 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A695C132A35F65B00B80BE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A695C142A35F65B00B80BE4 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4ACCB9A02A2CF3B500F28B56 = {
 			isa = PBXGroup;
 			children = (
 				4ACCB9AB2A2CF3B500F28B56 /* InAppPurchases-Consumable */,
 				4ACCB9AA2A2CF3B500F28B56 /* Products */,
+				4A695C132A35F65B00B80BE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +76,10 @@
 			children = (
 				4ACCB9AC2A2CF3B500F28B56 /* AppDelegate.swift */,
 				4ACCB9AE2A2CF3B500F28B56 /* SceneDelegate.swift */,
-				4ACCB9B02A2CF3B500F28B56 /* ViewController.swift */,
+				4A695C0E2A35997400B80BE4 /* ProductTableCell.swift */,
+				4A695C0F2A35997400B80BE4 /* ProductTableCell.xib */,
+				4A35C6F42A409D0400C7073A /* Configuration.storekit */,
+				4ACCB9B02A2CF3B500F28B56 /* InAppPurchaseController.swift */,
 				4ACCB9B22A2CF3B500F28B56 /* Main.storyboard */,
 				4ACCB9B52A2CF3B500F28B56 /* Assets.xcassets */,
 				4ACCB9B72A2CF3B500F28B56 /* LaunchScreen.storyboard */,
@@ -126,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ACCB9B92A2CF3B500F28B56 /* LaunchScreen.storyboard in Resources */,
+				4A35C6F52A409D0400C7073A /* Configuration.storekit in Resources */,
 				4ACCB9B62A2CF3B500F28B56 /* Assets.xcassets in Resources */,
+				4A695C112A35997400B80BE4 /* ProductTableCell.xib in Resources */,
 				4ACCB9B42A2CF3B500F28B56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ACCB9B12A2CF3B500F28B56 /* ViewController.swift in Sources */,
+				4ACCB9B12A2CF3B500F28B56 /* InAppPurchaseController.swift in Sources */,
 				4ACCB9AD2A2CF3B500F28B56 /* AppDelegate.swift in Sources */,
+				4A695C102A35997400B80BE4 /* ProductTableCell.swift in Sources */,
 				4ACCB9AF2A2CF3B500F28B56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,9 +309,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X3YKR6M53J;
+				DEVELOPMENT_TEAM = 5XF2ACBJW4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "InAppPurchases-Consumable/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,8 +325,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.InAppPurchases-Consumable";
+				PRODUCT_BUNDLE_IDENTIFIER = com.choice.dna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,9 +339,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X3YKR6M53J;
+				DEVELOPMENT_TEAM = 5XF2ACBJW4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "InAppPurchases-Consumable/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,8 +355,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.InAppPurchases-Consumable";
+				PRODUCT_BUNDLE_IDENTIFIER = com.choice.dna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
